@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+/* Estilo da página */
+  body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+  }
+  
+
+/* Container centralizador com Flexbox */
+main.container {
+  height: 100vh;
+  display: flex;
+  /*flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Estilo das caixas */
+.caixa {
+  margin: 10px;  
+  width: 200px;
+  height: 100px;
+  background-color: dodgerblue;
+  color: white;
+  font-size: 50px;
+  font-weight:bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
