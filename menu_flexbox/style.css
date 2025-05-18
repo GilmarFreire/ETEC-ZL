@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{
     margin:0px;
     padding: 0px;
@@ -19,19 +21,25 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-flow: row wrap;
+    
 }
 header > h1{
-    border: 2px dotted black;
+    /*border: 2px dotted black;*/
     flex: 0 0 250px;
+    text-align: start;
+    text-shadow: 2px 2px 2px black;
     
 }
 
 header nav{
     
-    border: 2px dotted black;
+    /*border: 2px dotted black;*/
     display: flex;
     flex-flow: row wrap;
-    justify-content: end
+    justify-content: flex-end;
+    
+    
     
 }
 
@@ -42,6 +50,7 @@ header nav a{
     border-radius: 10px;
     margin: 5px;
     text-decoration: none;
+    text-align: center;
 }
 
 header nav a:hover{
