@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container principal */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+  }
+  
+  /* Cada região do layout com bordas coloridas */
+  header {
+    grid-area: header;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid red; /* ← Borda vermelha */
+  }
+  
+  nav {
+    grid-area: nav;
+    background-color: #eee;
+    padding: 10px;
+    border: 2px solid blue; /* ← Borda azul */
+  }
+  
+  main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid green; /* ← Borda verde */
+  }
+  
+  section {
+    background-color: #fff;
+    border: 2px solid orange; /* ← Borda laranja */
+    padding: 10px;
+  }
+  
+  aside {
+    background-color: #f9f9f9;
+    border: 2px solid purple; /* ← Borda roxa */
+    padding: 10px;
+  }
+  
+  footer {
+    grid-area: footer;
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid brown; /* ← Borda marrom */
+  }
+  
+  /* Itens extras */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+  }
+  
