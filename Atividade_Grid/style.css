@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 4px solid red;
+    display: grid;
+    gap: 3px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 5fr 1fr;
+}
+
+header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr;       
+    border: 2px solid rebeccapurple;
+    place-content: center center;
+    padding: 10px;
+}
+
+h1{
+    margin-bottom: 15px;
+    border: 2px solid red;
+    align-self: center;
+}
+
+header nav{
+    border: 2px solid green;
+    grid-column: end;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 50vw;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-bottom: 9px;    
+}
+
+
+header nav ul li{
+    border: 3px solid gray;
+    padding: 5px;
+    display: inline;       
+}
+
+main{
+    padding: 15px;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+}
+
+h3{
+    margin-top: 15px;
+}
+
+aside{
+    border: 3px solid orange;
+    padding: 20px;
+}
+
+section{
+    margin: 10px;
+}
+
+article{
+    margin: 15px;
+}
+
+footer{
+    border: 3px solid grey;
+    display: grid;
+    justify-content: center;
+    padding: 10px;
+}
+footer ul li{
+
+    display: inline;
+}

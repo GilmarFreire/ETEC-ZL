@@ -8,10 +8,15 @@ body {
   /* Container principal */
   .container {
     display: grid;
-    grid-template-areas:"header" "nav""main" "footer";
+    grid-template-areas:
+    "header" 
+    "nav"
+    "main" 
+    "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr auto;
     height: 100vh;
+    border: 4px solid red;
   }
   
   /* Cada região do layout com bordas coloridas */
